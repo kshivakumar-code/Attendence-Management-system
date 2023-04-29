@@ -1,4 +1,4 @@
-# Attendence-Management-system
+# Attendence-Management-system using face recognition
 Attendence Management System using Face Recognition as a part of Collage Mini Project
 ***********************************************************************************
 How to run the project:

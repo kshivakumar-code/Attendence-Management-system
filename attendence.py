@@ -23,15 +23,15 @@ def text_to_speech(user_text):
     engine.runAndWait()
 
 
-haarcasecade_path = "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/haarcascade_frontalface_default.xml"
+haarcasecade_path = "/Users/shivakumar/Desktop/new/Attendence-Management-system/haarcascade_frontalface_default.xml"
 trainimagelabel_path = (
-    "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/TrainingImageLabel/Trainner.yml"
+    "/Users/shivakumar/Desktop/new/Attendance-Management/TrainingImageLabel/Trainner.yml"
 )
-trainimage_path = "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/TrainingImage"
+trainimage_path = "/Users/shivakumar/Desktop/new/Attendance-Management/TrainingImage"
 studentdetail_path = (
-    "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/StudentDetails/studentdetails.csv"
+    "/Users/shivakumar/Desktop/new/Attendance-Management/StudentDetails/studentdetails.csv"
 )
-attendance_path = "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/Attendence"
+attendance_path = "/Users/shivakumar/Desktop/new/Attendance-Management/Attendence"
 
 
 window = Tk()
@@ -52,7 +52,7 @@ def err_screen():
     global sc1
     sc1 = tk.Tk()
     sc1.geometry("400x110")
-    sc1.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/AMS.ico")
+    sc1.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management/AMS.ico")
     sc1.title("Warning!!")
     sc1.configure(background="black")
     sc1.resizable(0, 0)

@@ -12,15 +12,15 @@ import subprocess
 import tkinter.ttk as tkk
 import tkinter.font as font
 
-haarcasecade_path = "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/haarcascade_frontalface_default.xml"
+haarcasecade_path = "/Users/shivakumar/Desktop/new/Attendance-Management/haarcascade_frontalface_default.xml"
 trainimagelabel_path = (
-    "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/TrainingImageLabel/Trainner.yml"
+    "/Users/shivakumar/Desktop/new/Attendance-Management/TrainingImageLabel/Trainner.yml"
 )
-trainimage_path = "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/TrainingImage"
+trainimage_path = "/Users/shivakumar/Desktop/new/Attendance-Management/TrainingImage"
 studentdetail_path = (
-    "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/StudentDetails/studentdetails.csv"
+    "/Users/shivakumar/Desktop/new/Attendance-Management/StudentDetails/studentdetails.csv"
 )
-attendance_path = ("/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/Attendence")
+attendance_path = ("/Users/shivakumar/Desktop/new/Attendance-Management/Attendence")
 # for choose subject and fill attendance
 def subjectChoose(text_to_speech):
     def FillAttendance():
@@ -218,7 +218,7 @@ def subjectChoose(text_to_speech):
             t = "Please enter the subject name!!!"
             text_to_speech(t)
         else:
-         file_path = f"/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/Attendence/{sub}"
+         file_path = f"/Users/shivakumar/Desktop/new/Attendance-Management/Attendence/{sub}"
          subprocess.run(["open", file_path])
             
 

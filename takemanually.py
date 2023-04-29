@@ -23,7 +23,7 @@ index = 0
 def manually_fill():
     global sb
     sb = tk.Tk()
-    sb.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/AMS.ico")
+    sb.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management/AMS.ico")
     sb.title("Enter subject name...")
     sb.geometry("580x320")
     sb.configure(background="snow")
@@ -35,7 +35,7 @@ def manually_fill():
         global ec
         ec = tk.Tk()
         ec.geometry("300x100")
-        ec.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/AMS.ico")
+        ec.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management/AMS.ico")
         ec.title("Warning!!")
         ec.configure(background="snow")
         tk.Label(
@@ -68,7 +68,7 @@ def manually_fill():
         else:
             sb.destroy()
             MFW = tk.Tk()
-            MFW.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/AMS.ico")
+            MFW.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management/AMS.ico")
             MFW.title("Manually attendance of " + str(subb))
             MFW.geometry("880x470")
             MFW.configure(background="snow")
@@ -80,7 +80,7 @@ def manually_fill():
                 global errsc2
                 errsc2 = tk.Tk()
                 errsc2.geometry("330x100")
-                errsc2.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/AMS.ico")
+                errsc2.iconbitmap("/Users/shivakumar/Desktop/new/Attendance-Management/AMS.ico")
                 errsc2.title("Warning!!")
                 errsc2.configure(background="snow")
                 tk.Label(
@@ -183,7 +183,7 @@ def manually_fill():
             def create_csv():
                 df = pd.DataFrame(d)
                 csv_name = (
-                    "Attendance-Management-system-using-face-recognition/Attendence/"
+                    "Attendance-Management/Attendence/"
                     + subb
                     + "_"
                     + Date
@@ -272,7 +272,7 @@ def manually_fill():
                 import subprocess
 
                 subprocess.Popen(
-                    "/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/Attendence"
+                    "/Users/shivakumar/Desktop/new/Attendance-Management/Attendence"
                 )
 
             attf = tk.Button(

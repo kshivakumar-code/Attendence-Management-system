@@ -14,10 +14,10 @@ def subjectchoose(text_to_speech):
             t='Please enter the subject name.'
             text_to_speech(t)
         os.chdir(
-            f"/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/Attendence/{Subject}"
+            f"/Users/shivakumar/Desktop/new/Attendance-Management/Attendence/{Subject}"
         )
         filenames = glob(
-            f"/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/Attendence/{Subject}/{Subject}*.csv"
+            f"/Users/shivakumar/Desktop/new/Attendance-Management/Attendence/{Subject}/{Subject}*.csv"
         )
         df = [pd.read_csv(f) for f in filenames]
         newdf = df[0]
@@ -33,7 +33,7 @@ def subjectchoose(text_to_speech):
         root = tkinter.Tk()
         root.title("Attendance of "+Subject)
         root.configure(background="black")
-        cs = f"/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/Attendence/{Subject}/attendance.csv"
+        cs = f"/Users/shivakumar/Desktop/new/Attendance-Management/Attendence/{Subject}/attendance.csv"
         with open(cs) as file:
             reader = csv.reader(file)
             r = 0
@@ -81,7 +81,7 @@ def subjectchoose(text_to_speech):
         text_to_speech(t)
      
      else:
-        file_path = f"/Users/shivakumar/Desktop/new/Attendance-Management-system-using-face-recognition/Attendence/{sub}"
+        file_path = f"/Users/shivakumar/Desktop/new/Attendance-Management/Attendence/{sub}"
         subprocess.run(["open", file_path])
 
     attf = tk.Button(

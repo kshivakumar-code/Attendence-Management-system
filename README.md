@@ -7,6 +7,8 @@ How to run the project:
 
 •	Open the command prompt and type "pip install -r requirements.txt" to install the required packages for the project.
 
+•	create folders of named as TrainingImage and Attendence respectively.
+
 •	Open "attendance.py" and "automaticAttendance.py" and change all the path according to your system.
 
 •	Create the folders for subjects we require to take attendance in the "Attendence" folder.

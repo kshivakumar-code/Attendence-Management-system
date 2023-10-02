@@ -1,6 +1,6 @@
 numpy==1.22.1
-opencv-contrib-python==4.5.5.62
-opencv-python==4.5.5.62
+opencv-contrib-python==4.8.1.78.62
+opencv-python==4.8.1.78.62
 openpyxl==3.1.1
 pandas==1.3.5
 Pillow==8.4.0
